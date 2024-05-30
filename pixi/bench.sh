@@ -2,6 +2,8 @@
 
 set -euxo pipefail
 
-export PIXI_CACHE_DIR="$CACHE_DIR/pixi"
 pushd pixi
+
+export PIXI_CACHE_DIR="$CACHE_DIR/pixi"
+export PIXI_PROJECT_MANIFEST=$PWD/pixi.toml
 hyperfine --warmup 1 --prepare "rm -rf .pixi" "pixi install"
