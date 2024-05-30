@@ -1,0 +1,14 @@
+[project]
+name = "pixi-benchmark"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Ben Moss <bmoss40@bloomberg.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tasks]
+
+[dependencies]
+conda-lock = ">=2.5.7,<2.6"
+hyperfine = ">=1.18.0,<1.19"
+micromamba = ">=1.5.8,<1.6"
