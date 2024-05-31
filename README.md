@@ -2,8 +2,6 @@
 
 ## running
 
-Currently the environment being tested against only can be installed on the linux-64 platform.
-
 ```bash
 CACHE_DIR=/tmp/cache"
 

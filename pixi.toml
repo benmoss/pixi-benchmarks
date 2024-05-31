@@ -4,11 +4,12 @@ version = "0.1.0"
 description = "Add a short description here"
 authors = ["Ben Moss <bmoss40@bloomberg.com>"]
 channels = ["conda-forge"]
-platforms = ["linux-64"]
+platforms = ["linux-64", "osx-arm64"]
 
 [tasks]
 pixi = "./pixi/bench.sh"
 mamba = "./mamba/bench.sh"
+lock = "conda-lock lock --platform linux-64 --platform osx-arm64 --platform osx-64 --lockfile ./mamba/environment-lock.yml -f ./mamba/environment.yml"
 
 [dependencies]
 conda-lock = ">=2.5.7,<2.6"
