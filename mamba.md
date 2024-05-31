@@ -1,3 +1,3 @@
 | Command | Mean [s] | Min [s] | Max [s] | Relative |
 |:---|---:|---:|---:|---:|
-| `micromamba env create -r /tmp/cache -n mamba -f mamba/environment-lock.yml --yes` | 28.643 ± 1.983 | 27.125 | 32.329 | 1.00 |
+| `micromamba env create -r /ebs/cache -n mamba -f mamba/environment-lock.yml --yes` | 18.180 ± 0.149 | 17.943 | 18.421 | 1.00 |
